@@ -12,6 +12,14 @@
     flex-direction: $direction;
 }
 
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: lighten($primary-color, 100%);
+        color: darken($text-color, 100%);
+    }
+}
+
+
 body {
     background-color: $primary-color;
     color: $text-color;
@@ -30,4 +38,8 @@ body {
             color: pink;
         }
     }
+}
+
+.light {
+    @include theme($light-theme: true);
 }
