@@ -3,6 +3,27 @@ $primary-color: #272722;
 $accent-color: #ff652f;
 $text-color: #fff;
 
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+);
+
 body {
     background-color: $primary-color;
+    color: $text-color;
+    font-weight: map-get($font-weights, bold);
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    
+    #{&}__p {
+        font-weight: map-get($font-weights, medium);
+        
+        &:hover {
+            color: pink;
+        }
+    }
 }
