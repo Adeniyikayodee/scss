@@ -1,3 +1,8 @@
+// variables with $
+$primary-color: #272722;
+$accent-color: #ff652f;
+$text-color: #fff;
+
 body {
-    background-color: blue;
+    background-color: $primary-color;
 }
