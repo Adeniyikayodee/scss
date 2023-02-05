@@ -37,11 +37,35 @@ body {
     width: 80%;
     margin: 0 auto;
     
-    #{&}__p {
+    #{&}__p1 {
         font-weight: weight(medium);
         
         &:hover {
             color: pink;
+        }
+    }
+
+    #{&}__p2 {
+        @extend .main__p1;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    #{&}__p3 {
+        @extend .main__p1;
+
+        &:hover {
+            color: orchid;
+        }
+    }
+
+    #{&}__p4 {
+        @extend .main__p1;
+
+        &:hover {
+            color: purple;
         }
     }
 
