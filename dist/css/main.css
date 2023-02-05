@@ -15,14 +15,23 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 80%;
+  width: -20%;
   margin: 0 auto;
 }
-.main .main__p {
+.main .main__p1, .main .main__p4, .main .main__p3, .main .main__p2 {
   font-weight: 500;
 }
-.main .main__p:hover {
+.main .main__p1:hover, .main .main__p4:hover, .main .main__p3:hover, .main .main__p2:hover {
   color: pink;
+}
+.main .main__p2:hover {
+  color: #ff652f;
+}
+.main .main__p3:hover {
+  color: orchid;
+}
+.main .main__p4:hover {
+  color: purple;
 }
 @media (max-width: 800px) {
   .main {
