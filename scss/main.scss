@@ -14,3 +14,16 @@ body {
     color: $text-color;
     font-weight: map-get($font-weights, bold);
 }
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    
+    #{&}__p {
+        font-weight: map-get($font-weights, medium);
+        
+        &:hover {
+            color: pink;
+        }
+    }
+}
