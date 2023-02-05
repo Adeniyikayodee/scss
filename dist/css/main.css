@@ -24,6 +24,11 @@ body {
 .main .main__p:hover {
   color: pink;
 }
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
 
 .light {
   background: white;
